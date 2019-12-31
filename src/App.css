@@ -1,14 +1,15 @@
+html, body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: #5c2e91;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,4 +20,39 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.controls {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a92b31;
+  color: white;
+}
+
+.paragraph-selector {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.paragraph-selector p {
+  margin: 0 30px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ipsum-container {
+  max-width: 700px;
+  margin: 25px 10px;
+}
+
+p::selection {
+  color: white;
+  background-color: #c6168d;
 }
