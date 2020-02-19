@@ -1,44 +1,64 @@
 html, body {
   font-family: Verdana, Arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
+
 }
 
 .App {
   text-align: left;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #5c2e91;
 }
 
 header {
-  background-color: #5c2e91;
-  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.subhead {
+  font-size: calc(10px + 1vmin);
+  font-weight: 400;
+  color: white;
+  margin: 0px 10px 20px 10px;
 }
 
 .App-link {
   color: #09d3ac;
 }
 
-.controls {
-  height: 40px;
+.control-bar {
+  background-color: #a92b31;
   display: flex;
+  height: 20px;
   align-items: center;
   justify-content: center;
-  background-color: #a92b31;
   color: white;
+  padding: 10px;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
 }
 
 .paragraph-selector {
   display: flex;
   align-items: center;
-  margin: 0 30px;
+  justify-content: space-between;
 }
 
 .paragraph-selector p {
-  margin: 0 30px;
+  margin-right: 15px;
 }
 
 main {
@@ -49,6 +69,9 @@ main {
 
 #ipsum-container {
   max-width: 700px;
+  padding: 9px 25px;
+  background-color: white;
+  border-radius: 17px;
   margin: 25px 10px;
 }
 

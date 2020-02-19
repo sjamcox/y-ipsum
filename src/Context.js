@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import data from './data'
 const Context = React.createContext(null)
 
@@ -29,8 +29,10 @@ const ContextProvider = ({ children }) => {
         setIpsum(newIpsum)
     }
 
-    console.log(ipsum)
-
+    useEffect(() => (
+        createIpsum()
+    ), [])
+    
     return (
         <Context.Provider value={{ipsum, setIpsum, count, setCount, createIpsum}}>
             {children}
